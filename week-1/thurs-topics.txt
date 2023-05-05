@@ -20,5 +20,5 @@ Git instructions
 - what is Git
 - how to initialize Git
 - how to commit changes
-- how see previous commits
+- how see previous commit
 - how to sync local folder to Github
