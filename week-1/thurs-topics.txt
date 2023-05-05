@@ -1,0 +1,24 @@
+Terminal command lines
+- where am I in the file structure
+- how to change into new locations
+- how to go back up
+- create new folder
+- create new file
+- see all the files
+- how to check for hidden files
+- how does CLI system saves file and file structure
+- how to move to a new location
+- how to remove file
+- how to use flags
+- how to remove folder and files inside it
+- how to check history
+- how to look for specific syntax
+- how to get help from system
+
+
+Git instructions
+- what is Git
+- how to initialize Git
+- how to commit changes
+- how see previous commits
+- how to sync local folder to Github

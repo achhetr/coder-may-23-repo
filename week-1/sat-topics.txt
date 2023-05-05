@@ -1,0 +1,20 @@
+1 - Finish Git
+
+- some examples of github
+react/ flask
+
+2 - Explain Workbook
+
+3 - Markdown
+
+- 1 problem of github of a student
+- setup Git and Github
+https://medium.com/@aklson_DS/how-to-properly-setup-your-github-repository-mac-version-3a8047b899e5
+
+4 - HTML basics
+
+5 - Css basics
+
+6 - Layout
+
+7 - Navbar
