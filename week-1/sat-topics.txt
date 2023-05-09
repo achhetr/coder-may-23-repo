@@ -12,9 +12,12 @@ react/ flask
 https://medium.com/@aklson_DS/how-to-properly-setup-your-github-repository-mac-version-3a8047b899e5
 
 4 - HTML basics
+- tags <some></some>
+- element
+- attribute
 
-5 - Css basics
+5 - Layout
 
-6 - Layout
+6 - Css basics
 
 7 - Navbar
