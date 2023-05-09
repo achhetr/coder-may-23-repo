@@ -1,0 +1,10 @@
+1 - HTML
+common tags, classes, id
+
+2 - Css basics
+css selectors
+
+3 - Layouts. (margin, padding, border, position, box-sizing, units and components)
+- display
+- box model
+
