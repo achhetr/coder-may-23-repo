@@ -1,0 +1,14 @@
+- Responsive design -> mobile first
+
+- Viewport
+
+- px -> percentage, vw, vh, em and rem
+
+- Media query
+
+- Flex box
+
+- Frog game - 10 levels
+https://flexboxfroggy.com/
+
+- Navigation bar
