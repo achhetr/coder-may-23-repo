@@ -1,0 +1,10 @@
+- mobile first approach
+
+- Login page
+- Navigation
+
+- desktop first
+
+- Web hosting landing page
+
+
