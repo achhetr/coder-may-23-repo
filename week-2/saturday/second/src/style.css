@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75vw;
+  margin: 0 auto;
+  background-color: blueviolet;
+  min-height: 100vh;
+}
+
+section {
+  margin-top: 48px;
+}
+
+/* navigation */
+
+.logo {
+  width: 120px;
+  height: 48px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.nav {
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 800px;
+  list-style-type: none;
+  padding-right: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+
+.nav-links li:last-child a {
+  padding: 6px 20px;
+  background-color: green;
+  color: white;
+  font-weight: 700;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* landing page action */
+
+.landing-page {
+  display: flex;
+}
+
+.landing-action {
+  color: white;
+  padding: 50px;
+}
+
+.landing-header {
+  font-size: 48px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.tag-text {
+  width: 65%;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.action-btns a {
+  padding: 12px 20px;
+  background-color: green;
+  color: white;
+  text-decoration: none; 
+  margin-top: 10px;
+  border: 2px solid green;
+}
+
+.action-btns .more-detailed-btn {
+  background-color: transparent;
+  border: 2px solid green;
+}
+
+
+.landing-img {
+  width: 50%;
+}
+
+.landing-img img {
+  width: 100%;
+}
+
+/* pricing cards section */
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pricing-card {
+  padding: 24px;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pricing-card h4 {
+  text-align: center;
+}
+
+.pricing-card .price {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.price sup, 
+.price sub {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.discount {
+  text-align: center;
+  color: rgb(113, 174, 113);
+  font-weight: 700;
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+}
+
+.price-feature li {
+  list-style-type: none;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.748);
+}
+
+.pricing-card a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 12px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.pricing-card a:hover,
+.pricing-card a:active {
+  background-color: rgb(5, 5, 151);
+}
+
+
+.view-listing a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  display: inline-block;
+  width: 100%;
+}
+
+.view-listing a:hover,
+.view-listing a:active {
+  color: blue;
+}
