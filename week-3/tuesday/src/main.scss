@@ -1,0 +1,39 @@
+$primary-color: blue;
+$secondary-color: white;
+
+@mixin text-color() {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 10px;
+  margin: 20px;
+}
+
+@mixin display-col-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.display-text {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 10px;
+  margin: 20px;
+}
+
+h1 {
+  @include text-color;
+  padding: 1rem;
+}
+
+a {
+  @include text-color;
+}
+
+.cards {
+  .card {
+    a {
+      @include text-color;
+      color: greenyellow;
+    }
+  }
+}

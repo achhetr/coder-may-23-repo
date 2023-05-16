@@ -1,0 +1,16 @@
+- Assignment
+
+- Typography
+https://www.w3schools.com/cssref/css_websafe_fonts.php
+font-size, font-weight, font-family
+
+- Internal Links
+
+- Project Management (Theory)
+
+- Sass/ Scss
+  variable
+  mixin -> include
+  nesting selectors
+  inheritance -> extend
+

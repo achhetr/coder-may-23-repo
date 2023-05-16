@@ -1,0 +1,29 @@
+.display-text {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+
+h1 {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  padding: 1rem;
+}
+
+a {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+
+.cards .card a {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin: 20px;
+  color: greenyellow;
+}/*# sourceMappingURL=main.css.map */
