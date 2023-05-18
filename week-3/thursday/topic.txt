@@ -1,0 +1,17 @@
+- Effect and Animation
+  pseudo class
+  transition
+  transform -> scaleX, scaleY, translate
+  keyframes -> animation-name and duration
+
+- Website Accessibility
+https://www.w3.org/WAI/standards-guidelines/wcag/
+Extension https://marketplace.visualstudio.com/items?itemName=eknudsen.atag-content-prompter
+
+- Sitemaps
+https://www.semrush.com/blog/sitemap-generator-tools/
+sitemap examples cc/@rob_thomas
+
+- Wireframes
+balsamiq tool
+
