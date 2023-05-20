@@ -1,4 +1,4 @@
-.portfolio {
+.portfolio-cards {
   text-align: center;
   color: lighten($font-primary-color, 20%);
   h1 {
@@ -23,6 +23,18 @@
 
     span {
       font-style: italic;
+    }
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+  .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    .portfolio-card {
+      border: none;
+      width: unset;
     }
   }
 }

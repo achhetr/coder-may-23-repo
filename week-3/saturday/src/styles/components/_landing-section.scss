@@ -44,3 +44,17 @@
     font-size: 20px;
   }
 }
+
+
+@media screen and (min-width: 800px) {
+  .landing {
+    .container {
+      display: flex;
+      gap: 20px;
+
+      .landing-info {
+        flex: 1;
+      }
+    }
+  }
+}

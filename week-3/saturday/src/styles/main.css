@@ -56,6 +56,20 @@ body {
   width: 75vw;
 }
 
+@media screen and (min-width: 800px) {
+  .landing .landing-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .landing .landing-info img {
+    width: 350px;
+  }
+  .portfolio-card img {
+    width: 500px;
+  }
+}
 .header {
   background-color: #F17F29;
   padding: 1rem 0.5rem;
@@ -81,6 +95,15 @@ nav {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 800px) {
+  .nav-bar {
+    flex-direction: row;
+    margin-top: 16px;
+  }
+  .nav-bar li {
+    border-top: 0.2rem solid rgb(214, 209, 209);
+  }
+}
 .landing {
   width: 80vw;
   margin: 0 auto 1rem auto;
@@ -122,6 +145,15 @@ nav {
   font-size: 20px;
 }
 
+@media screen and (min-width: 800px) {
+  .landing .container {
+    display: flex;
+    gap: 20px;
+  }
+  .landing .container .landing-info {
+    flex: 1;
+  }
+}
 .footer {
   background-color: #F17F29;
 }
@@ -139,17 +171,17 @@ nav {
   animation-iteration-count: infinite;
 }
 
-.portfolio {
+.portfolio-cards {
   text-align: center;
   color: #4f6345;
 }
-.portfolio h1 {
+.portfolio-cards h1 {
   margin: 1rem 0;
   font-size: 24px;
   font-weight: 100;
   text-decoration: underline;
 }
-.portfolio .portfolio-card {
+.portfolio-cards .portfolio-card {
   border: 1px solid #1F271B;
   width: 95vw;
   margin: 0 auto;
@@ -157,10 +189,21 @@ nav {
   border-radius: 4px;
   margin-bottom: 16px;
 }
-.portfolio .portfolio-card img {
+.portfolio-cards .portfolio-card img {
   margin: 1rem 0;
   border-radius: 4px;
 }
-.portfolio .portfolio-card span {
+.portfolio-cards .portfolio-card span {
   font-style: italic;
+}
+
+@media screen and (min-width: 800px) {
+  .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-cards .portfolio-card {
+    border: none;
+    width: unset;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -19,3 +19,14 @@
 nav {
   margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 800px) {
+  .nav-bar {
+    flex-direction: row;
+    margin-top: 16px;
+
+    li {
+      border-top: 0.2rem solid $nav-border;
+    }
+  }
+}

@@ -33,3 +33,23 @@
     width: 75vw;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .landing {
+    .landing-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      img {
+        width: 350px;
+      }
+    }
+  }
+
+  .portfolio-card {
+    img {
+      width: 500px;
+    }
+  }
+}
