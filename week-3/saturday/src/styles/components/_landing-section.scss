@@ -1,0 +1,30 @@
+.landing {
+  width: 80vw;
+  margin: 0 auto 1rem auto;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid $nav-border;
+
+  .landing-info {
+    h3 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+      font-weight: 100;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+  }
+
+  .lg-background {
+    background-color: lighten($color: $nav-border, $amount: 5%);
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

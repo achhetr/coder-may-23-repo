@@ -1,0 +1,14 @@
+// Defaults
+@import 'components/default';
+@import 'components/fonts';
+@import 'components/colors';
+
+// custom for all components
+@import 'components/animation';
+
+// components
+@import 'components/image';
+@import 'components/header';
+@import 'components/navbar';
+@import 'components/landing-section';
+@import 'components/footer';

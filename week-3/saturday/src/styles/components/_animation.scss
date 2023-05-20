@@ -1,0 +1,14 @@
+@keyframes shake {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(-100px);
+  }
+}
