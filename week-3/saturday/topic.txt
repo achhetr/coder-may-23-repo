@@ -1,0 +1,5 @@
+- 2 Sample project
+
+- Full website 2 pages
+  - partial scss
+  - netlify deploy
