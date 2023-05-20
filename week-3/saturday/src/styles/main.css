@@ -47,6 +47,10 @@ body {
   height: 64px;
 }
 
+.portfolio-card img {
+  width: 75vw;
+}
+
 .header {
   background-color: #F17F29;
   padding: 1rem 0.5rem;
@@ -97,6 +101,22 @@ nav {
   margin-bottom: 1rem;
 }
 
+.landing-action-container {
+  display: flex;
+  justify-content: center;
+}
+.landing-action-container a {
+  display: inline-block;
+  text-align: center;
+  background-color: #F17F29;
+  padding: 16px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
 .footer {
   background-color: #F17F29;
 }
@@ -113,4 +133,30 @@ nav {
   animation-name: shake;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
+}
+
+.portfolio {
+  text-align: center;
+  color: #4f6345;
+}
+.portfolio h1 {
+  margin: 1rem 0;
+  font-size: 24px;
+  font-weight: 100;
+  text-decoration: underline;
+}
+.portfolio .portfolio-card {
+  border: 1px solid #1F271B;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 16px 0;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.portfolio .portfolio-card img {
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+.portfolio .portfolio-card span {
+  font-style: italic;
 }/*# sourceMappingURL=main.css.map */
