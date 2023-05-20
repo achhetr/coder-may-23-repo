@@ -6,9 +6,14 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   max-width: 100vw;
   overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
@@ -121,7 +126,6 @@ nav {
   background-color: #F17F29;
 }
 .footer .footer-links {
-  width: 80vw;
   margin: 0 auto;
   list-style-type: none;
   padding: 1rem 0;
