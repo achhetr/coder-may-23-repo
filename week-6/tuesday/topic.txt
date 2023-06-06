@@ -1,0 +1,34 @@
+- Python setup (To make sure everyone gets onboarded)
+https://github.com/pyenv/pyenv#installation
+convert python3 to python
+`echo "alias python=python3" >> ~/.zshrc; source ~/.zshrc`
+
+- Basic Python REPL
+  - what is REPL
+  - validation
+  
+- First program
+  - hello world
+  - print statement
+
+- expression and statement
+
+- Variable
+  - where to save Data
+  - how do we save Data
+  - convention in Python PEP https://peps.python.org/pep-0008/
+
+- Data types
+  - simple data types
+    - numeric types
+      - integer (1,2,3,-2,0)
+      - float (2.3, -4.3, 9.9990)
+    - boolean type
+    - none type
+    - string type
+
+- Strings
+  - first data types
+  - immutable
+
+  - collection of data types
