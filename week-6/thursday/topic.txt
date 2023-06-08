@@ -1,0 +1,15 @@
+- String methods
+    len(): Returns the length of a string.
+    lower(): Converts a string to lowercase.
+    upper(): Converts a string to uppercase.
+    split(): Splits a string into a list of substrings based on a delimiter.
+    join(): Concatenates a list of strings into a single string using a specified separator.
+
+- if else
+    Check if a number is positive or negative
+    Determine if a person is eligible to vote
+    Check if a number is even or odd
+    Determine the grade based on a student's score
+    Check if a year is a leap year
+
+- match case (switch case)
