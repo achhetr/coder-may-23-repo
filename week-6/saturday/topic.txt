@@ -1,0 +1,12 @@
+Input and output
+
+String concatenation/ manipulate
+
+type conversion
+    - errors in type conversion `s=int("text")`
+
+Loop
+    - for
+    - while
+    - break
+    - continue

@@ -1,0 +1,11 @@
+programming challenges
+    - count vowels and consonants in the string
+    - count the number of capital letters
+    - count the number of puntuations √
+    - remove spaces from string without inbuilt function
+    - calculate Factorial
+    - find L.C.M. of two numbers
+    - check whether a given string is a palindrome or not
+    - check if a number is prime
+    - print ASCII Value of a character
+
