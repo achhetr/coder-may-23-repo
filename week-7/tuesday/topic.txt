@@ -1,0 +1,8 @@
+- range
+- functions
+    parameter and an argument
+    return type
+- pseudocode
+- solve 3 problems
+- magic
+- flowchart

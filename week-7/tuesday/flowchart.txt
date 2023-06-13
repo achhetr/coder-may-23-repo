@@ -1,0 +1,17 @@
+- Oval
+    start and ends
+
+- Rectangle
+    process, statement or expression
+
+- Diamond
+    Conditions
+
+- Arrow
+    Direction
+
+- Parallelogram
+    Input/ Output
+
+- Cylinder
+    Database or storage
