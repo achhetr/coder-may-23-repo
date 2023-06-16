@@ -5,7 +5,7 @@
     process, statement or expression
 
 - Diamond
-    Conditions
+    Conditions, loops
 
 - Arrow
     Direction

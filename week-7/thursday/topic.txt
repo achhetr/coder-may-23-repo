@@ -1,0 +1,8 @@
+From previous lessons
+    - revisit 100th prime number challenge
+    - show algorithm magic
+    - flowchart for prime number
+Today
+    - import and export files
+    - advance or complex data types
+
