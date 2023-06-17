@@ -1,0 +1,15 @@
+Shell Script
+    - use case
+        - 100 react micro service
+        - shell script (coder_test.sh, coder_dev.sh, coder_production.sh)
+        - worry about yarn version, node version or if a new version added
+
+    - how to give permission to all users
+
+Small Terminal App
+
+- Password Generator
+    A utility that generates strong passwords based on user preferences. Users can specify the length, character types (e.g., uppercase letters, lowercase letters, numbers, symbols), and the number of passwords to generate.
+
+- To-Do List Manager
+    A simple application that allows users to manage their to-do lists. Users can add tasks, mark them as completed, and remove tasks from the list.
