@@ -1,0 +1,39 @@
+- Objects -> real world like entity
+    - non object oriented 
+        approach for car example
+        a student with attributes like name, age, and major
+- Classes -> blueprint of the object
+
+- function vs methods
+
+- Object oriented programming
+    - any information shared, used, manipulate and create will be contained in object
+    - cons for smalled project its overloaded
+    - pros for larger project its advantageous
+
+features
+- information will be contained in an object
+- attributes object -> red color ferrari, fastest car speed of maclaren
+- method -> share or change the attribute value
+- constructor -> 
+
+def __init__(self):
+    pass
+
+- inheritance
+    - dog, cat, snake (classified as animals)
+    - Animal
+    - Snake <- Animal
+
+    - Animal(eyes=2, skin="fur or scales", legs=4, breed="dog or cat")
+    dog = Animal(2, "fur", 4, "dog")
+    cat = Animal(2, "fur", 4, "cat")
+    snake = Animal(2, "scales", None, "snake")
+
+    Snake(Animal)
+    cobra = Snake(2, "scales", None, "snake", "true")
+
+- Encapsulation
+
+
+- Challenge presented
