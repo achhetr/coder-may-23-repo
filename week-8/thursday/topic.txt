@@ -1,0 +1,22 @@
+- Error handling
+    -> syntax errors and syntactical
+
+    Exception handling -> https://www.w3schools.com/python/python_try_except.asp
+        try, except, else, finally
+    raise Exception -> https://www.w3schools.com/python/gloss_python_raise.asp
+
+    - where a user sending btc to eth
+    - AccountMisMatchError("cannot send from btc to eth account")
+
+- Terminal application assignment explain
+
+- variable scope
+
+- virtual environment and testing -> ref - https://github.com/trending/python
+    - pytest packages -> https://docs.pytest.org/en/7.3.x/
+        - file should start with `test_`
+        - function to test start with `test_`
+    - types of Testing
+        * unit testing
+        * integration testing
+    - shell script for testing
