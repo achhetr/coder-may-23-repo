@@ -1,0 +1,19 @@
+File handling
+
+Using external packages
+BeautifulSoup and requests
+
+select topic
+    - covid project
+planning
+    - scrape the website
+    - user which states
+        - 7d average
+        - active cases
+    - percent of new cases with respect active cases
+    - decrease or increase
+
+Web scraping
+- covid project
+- crypto tracking
+- scrape top trending searches in twitter and perform sentiment analysis
