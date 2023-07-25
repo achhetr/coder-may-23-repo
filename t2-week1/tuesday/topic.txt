@@ -1,0 +1,63 @@
+Assignment release
+
+
+Introduction to Servers
+
+Terminal app
+- input and output
+- could information db or files
+- uptime was not infinite
+- it cannot communicate over the internet via http
+- restart the system
+
+Server
+- Handshake
+
+- https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1200px-Client-server-model.svg.png
+- https://madooei.github.io/cs421_sp20_homepage/assets/client-server-1.png
+
+PORTs -> that are requests
+- physical PORTs
+- virtual PORTs
+
+Introduction to APIs
+- Application Programming Interface (API)
+- Endpoints
+- Server Room (Melbourne) port 80 -> /melbourne { "username": "akash", "password": "password" }
+- bank server (Adelaide) port 443 -> /bank/debit <- { "account_number": 1234, "amount": 10_000_000 }
+
+API eg:
+- https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/aud.json
+- https://icanhazdadjoke.com/
+
+Types of APIs
+- RESTful -> HTTP method <-> server and clients
+- GraphQL
+- Socket
+
+
+What are Http Methods or Verb -> HTTP
+- Set of rules
+- Response and Request
+- CRUD <-> patch and put (update)
+
+- name, age, interest
+- akash, 43, cricket
+
+{ "age": 45 } <- Patch
+
+Status codes
+2xx, 3xx, 4xx, 5xx
+- 5xx -> 503
+- 4xx -> 404
+- 2xx -> 200, 201
+
+Different types of frameworks
+- Rails <-> 5 endpoints
+- Django
+- Express <-> Node
+- Flask
+
+Introduction to Flask
+- WSGI <-> Web Server Gateway Interface
+- what you want is what you get
