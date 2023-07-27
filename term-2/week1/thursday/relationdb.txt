@@ -1,0 +1,44 @@
+--------------
+Strutured Query language
+
+;
+
+persons
+name, age
+
+
+select count(*) from persons;
+|-------|
+|   7   |
+|-------|
+
+
+---------DDL----------
+data definition language
+
+persons table
+name, age
+
+
+Hey DB -> create a table with name persons and columns of name which will varchar and age as number;
+
+
+---------DML----------
+data manipulation language
+
+persons table
+name, age
+akash, 34
+
+update age of name = "akash" in the table persons with 43;
+
+---------DCL----------
+data control language
+
+akash team sass
+
+avas team css
+
+
+table sass <-
+table css <- 

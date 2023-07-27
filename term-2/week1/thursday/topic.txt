@@ -1,0 +1,28 @@
+Introduction to DB
+- Why DB?
+- Types of DB
+    - Relational
+    - Non Relational
+
+Relational DB
+- Intro to SQL
+    - DDL -> Data definition language
+    - DML -> Data manipulation language
+    - DCL -> Data control language
+- Example of DBMS
+    - Postgres
+    - MySQL
+    - Aurora
+
+Primary Key and Foreign Key Overview
+
+ERD -> Entity Relational Diagram
+- Entities
+- Attributes
+- relationships
+
+Cardinality
+- number notation
+- Crow's foot notation
+
+
