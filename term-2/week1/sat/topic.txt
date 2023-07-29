@@ -1,0 +1,30 @@
+Advance Python
+
+- List comprehension
+- Dict comprehension
+
+Rule
+newlist = [expression for item in iterable if condition == True]
+newdict = {k: v for k, v in dictonary if condition == True}
+
+- First class functions
+
+- decorator
+    simple decorators
+    decorator with arguments
+
+MVC
+- model
+- view
+- controller
+- single responsibility principles of a function
+
+MVC examples
+
+Insomnia and postman
+- example routes for testing
+
+Flask following documentation (interactive learning)
+- setup flask
+- simple CRUD app from documentation
+

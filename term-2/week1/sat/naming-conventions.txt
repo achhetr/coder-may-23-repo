@@ -1,0 +1,4 @@
+accounts
+
+list of account, GET, index
+an account, GET, show
