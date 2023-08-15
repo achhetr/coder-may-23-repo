@@ -1,0 +1,15 @@
+Big O notation
+
+
+MVC CRUD Ideas (e-commerce style)
+- Pet shop
+
+- Shopkeeper
+- Pet
+- Customers
+
+
+database -> MVC -> routes
+PG -> docker -> DBvear
+
+No SQL query -> Only ORMs
