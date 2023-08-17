@@ -1,0 +1,20 @@
+<-----PROJECT SETUP------>
+
+- create a virtual environment and activate it
+
+- install dependencies for fresh installations
+pip install flask-bcrypt flask-jwt-extended flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy psycopg2-binary python-dotenv && pip install --upgrade pip && pip freeze > requirements.txt
+
+- already started with the project then run
+pip install -r ./requirements.txt
+
+- initialise and setup git
+
+<----Initialise Project---->
+
+- setup env file from env example
+cp .env.example .env
+
+- app.py or main.py
+
+- define config
