@@ -3,6 +3,8 @@ import os
 class BaseConfig(object):
     @property
     def SQLALCHEMY_DATABASE_URI(self):
+        # if error in connection use
+        # 
         db = os.environ.get("DATABASE_URL")
 
         if db is None:
@@ -24,7 +26,7 @@ class ProductionConfig(BaseConfig):
 current_env = os.environ.get("FLASK_ENV")
 
 if current_env == "testing":
-    app_config = DevelopementConfig()
+    app_config = TestingConfig()
 elif current_env == "production":
     app_config = ProductionConfig()
 else:

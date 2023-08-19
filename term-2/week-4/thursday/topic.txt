@@ -1,9 +1,17 @@
 - Pet shop
-    - Shopkeeper
-    - Pet
+    - Shopkeepers
     - Customers
-
+    - Pet
 
 - Marshmallow - 
 - SqlAlchemy - 
 - Blueprint - 
+
+
+- Model
+
+PetOwner (Buy or Sell)
+id, license_number, phone_number, post_code, is_shopkeeper
+
+Pet
+id, type, breed, pet_license_number
