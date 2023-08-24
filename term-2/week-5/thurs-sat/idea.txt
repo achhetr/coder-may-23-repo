@@ -1,0 +1,28 @@
+Todo List
+
+Responsibility
+
+user -> who will CRUD a task
+task -> which contains information of the job
+     -> numbers of task
+
+
+Attributes
+
+user (id, email) -> task_id
+task (id, name, description, status[done, pending], due_date) -> user_id
+
+Example
+
+user(1, bryan)
+user(2, jit)
+
+task(1, smash tennis game, ...., 1)
+task(2, smash tennis game, ...., 2)
+task(3, play soccer, ...., 1)
+task(4, play soccer, ...., 2)
+
+Relationship
+one to many relationship
+user -> task
+

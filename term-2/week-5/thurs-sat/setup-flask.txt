@@ -1,0 +1,8 @@
+Create project directory
+Setup virtual environment
+Activate virtual environment
+    python -m venv venv &&
+    source venv/bin/activate
+Install dependencies and Freeze requirements
+    pip install flask-bcrypt flask-jwt-extended flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy psycopg2-binary python-dotenv && pip install --upgrade pip && pip freeze > requirements.txt
+Initialize git

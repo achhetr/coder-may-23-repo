@@ -1,0 +1,13 @@
+Todo List
+
+
+Thurs
+- Interactive session
+    - setup mvc, flask, config, environment and add the models
+
+Saturday
+- Associations
+- project
+
+
+
