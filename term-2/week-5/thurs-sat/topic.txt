@@ -9,5 +9,10 @@ Saturday
 - Associations (1 to Many) + (many to many)
 - project
 
+Task for next week
 
+- we will fix create, update and delete 
+- we will add comments (many to many)
+- we will add authentication
+- user admin (give them all the tasks)
 

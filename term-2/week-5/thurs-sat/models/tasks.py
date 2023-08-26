@@ -8,7 +8,7 @@ class Task(db.Model):
     name = db.Column(db.Text)
     description = db.Column(db.Text)
     due_date = db.Column(db.DateTime)
-    completed_at = db.Column(db.DateTime, nullable=True)
+    completed_at = db.Column(db.DateTime, nullable=True, default=None)
     user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
 
     user = db.relationship(

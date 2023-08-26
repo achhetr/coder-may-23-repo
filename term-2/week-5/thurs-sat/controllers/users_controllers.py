@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, request
 
 from main import db
 from models.users import User
@@ -41,4 +41,27 @@ def delete_user(user_id: int):
 
     return jsonify(message=f"Cannot delete user with id=`{user_id}`. Not found")
 
-# Creating a user and updating a user
+# /users -> Creating a user
+@users.route("/", methods=["POST"])
+def create_users():
+    user_json = user_schema.load(request.json)
+    user = User(**user_json)
+    db.session.add(user)
+    db.session.commit()
+
+    return jsonify(user_schema.dump(user))
+
+# /users/<id> -> Updating a user with id
+@users.route("/<int:user_id>", methods=["PUT"])
+def update_users(user_id: int):
+    q = db.select(User).filter_by(id=user_id)
+    user = db.session.scalar(q)
+    response = user_schema.dump(user)
+
+    if response:
+        user_json = user_schema.load(request.json)
+        user.email = user_json["email"]
+        db.session.commit()
+        return jsonify(user_schema.dump(user))
+
+    return jsonify(message=f"Cannot update user with id=`{user_id}`. Not found")
