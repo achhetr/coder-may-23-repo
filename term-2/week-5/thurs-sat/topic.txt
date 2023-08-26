@@ -6,7 +6,7 @@ Thurs
     - setup mvc, flask, config, environment and add the models
 
 Saturday
-- Associations
+- Associations (1 to Many) + (many to many)
 - project
 
 

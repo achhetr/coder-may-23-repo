@@ -4,7 +4,7 @@ Responsibility
 
 user -> who will CRUD a task
 task -> which contains information of the job
-     -> numbers of task
+     -> numbers of task for each user
 
 
 Attributes

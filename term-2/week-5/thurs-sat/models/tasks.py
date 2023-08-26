@@ -9,5 +9,9 @@ class Task(db.Model):
     description = db.Column(db.Text)
     due_date = db.Column(db.DateTime)
     completed_at = db.Column(db.DateTime, nullable=True)
+    user_id = db.Column(db.Integer, db.ForeignKey("users.id"), nullable=False)
 
-    # user_id
+    user = db.relationship(
+        "User",
+        back_populates="tasks"
+    )
