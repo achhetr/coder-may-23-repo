@@ -9,8 +9,11 @@ class TaskSchema(ma.Schema):
             "description",
             "due_date",
             "completed_at",
+            "user_id",
             "user",
         )
+
+        load_only = ['user_id']
 
     user = fields.Nested("UserSchema", exclude=("tasks",))
 

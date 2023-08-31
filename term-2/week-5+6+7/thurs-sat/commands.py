@@ -3,7 +3,7 @@ from datetime import datetime
 import time
 
 from main import db
-from models import Task, User
+from models import Task, User, Comment
 
 db_commands = Blueprint("db", __name__)
 
@@ -68,6 +68,28 @@ def seed_db():
     ])
 
     # commit db for tasks
+    db.session.commit()
+
+    # comments
+    comment1 = Comment(
+        message = "Teach Flask",
+        created_at = datetime.now(),
+        task_id = task1.id,
+        user_id = user2.id,
+    )
+
+    comment2 = Comment(
+        message = "Teach Flask",
+        created_at = datetime.now(),
+        task_id = task1.id,
+        user_id = task1.user_id,
+    )
+
+    # add comments object to db
+    db.session.add_all([
+        comment1, comment2,
+    ])
+
     db.session.commit()
 
     # log if seed is succeeded

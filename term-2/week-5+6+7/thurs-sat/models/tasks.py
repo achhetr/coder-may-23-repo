@@ -15,3 +15,9 @@ class Task(db.Model):
         "User",
         back_populates="tasks"
     )
+
+    comments = db.relationship(
+        "Comment",
+        back_populates="task",
+        cascade="all, delete"
+    )
