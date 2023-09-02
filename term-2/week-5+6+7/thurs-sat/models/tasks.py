@@ -6,6 +6,7 @@ class Task(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
     name = db.Column(db.Text)
+    state = db.Column(db.Text, nullable=False) # ("Not Started", "In Progress", "Completed")
     description = db.Column(db.Text)
     due_date = db.Column(db.DateTime)
     completed_at = db.Column(db.DateTime, nullable=True, default=None)

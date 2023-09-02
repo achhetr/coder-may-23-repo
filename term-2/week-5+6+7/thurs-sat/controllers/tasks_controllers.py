@@ -1,16 +1,35 @@
 from flask import Blueprint, jsonify, request
-
+from sqlalchemy.exc import IntegrityError, DataError
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from main import db
-from models.tasks import Task
+from models import Task, User
 from schemas.tasks import task_schema, tasks_schema
 
 # /task
 tasks = Blueprint("task", __name__, url_prefix="/tasks")
 
+@tasks.errorhandler(KeyError)
+def key_error_handler(e):
+    return jsonify({"error": f"Key Error - `{e}`"}), 400
+
+@tasks.errorhandler(IntegrityError)
+def integrity_error_handler(e):
+    return jsonify({"error": f"Integrity Error - `{e}`"}), 400
+
+@tasks.errorhandler(DataError)
+def data_error_handler(e):
+    return jsonify({"error": f"Data Error - `{e}`"}), 400
+
+
 # /tasks -> list of tasks
 @tasks.route("/", methods=["GET"])
+@jwt_required()
 def get_tasks():
-    q = db.select(Task)
+    email = get_jwt_identity()
+    statement = db.select(User).filter_by(email=email)
+    user = db.session.scalar(statement)
+
+    q = db.select(Task).filter_by(user_id=user.id)
     tasks = db.session.scalars(q)
     return jsonify(tasks_schema.dump(tasks))
     
@@ -43,9 +62,16 @@ def delete_task(task_id: int):
 
 # /tasks -> Creating a task
 @tasks.route("/", methods=["POST"])
+@jwt_required()
 def create_tasks():
+    email = get_jwt_identity()
+    statement = db.select(User).filter_by(email=email)
+    user = db.session.scalar(statement)
+
     task_json = task_schema.load(request.json)
     task = Task(**task_json)
+    task.user_id = user.id
+
     db.session.add(task)
     db.session.commit()
 

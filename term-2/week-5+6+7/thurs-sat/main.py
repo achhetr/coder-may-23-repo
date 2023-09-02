@@ -1,7 +1,12 @@
+import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
+from flask_bcrypt import Bcrypt
+from flask_jwt_extended import JWTManager
+from config import app_config
 
+bcrypt = Bcrypt()
 db = SQLAlchemy()
 ma = Marshmallow()
 
@@ -11,6 +16,8 @@ def init_app():
 
     # app config
     app.config.from_object("config.app_config")
+    app.config["JWT_SECRET_KEY"] = os.environ.get("DATABASE_URI") or "super-secret"
+    jwt = JWTManager(app)
 
     # connect to DB
     db.init_app(app)

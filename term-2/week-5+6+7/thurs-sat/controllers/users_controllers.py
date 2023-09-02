@@ -1,4 +1,5 @@
 from flask import Blueprint, jsonify, request
+from marshmallow.exceptions import ValidationError
 
 from main import db
 from models.users import User
@@ -6,6 +7,10 @@ from schemas.users import user_schema, users_schema
 
 # /user
 users = Blueprint("user", __name__, url_prefix="/users")
+
+@users.errorhandler(ValidationError)
+def key_error_handler(e):
+    return jsonify({"error": f"Validation Error - `{e}`"}), 400
 
 # /users -> list of users
 @users.route("/", methods=["GET"])

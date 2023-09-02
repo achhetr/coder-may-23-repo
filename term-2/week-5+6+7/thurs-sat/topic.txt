@@ -13,7 +13,13 @@ Task for next week
 
 - we will fix create, update and delete √
 - we will add comments (many to many)
+- learn validation
+    - request that we are injecting through the routes that needs to validating
+    - username and password
+    - password 6 digits and 10 digits
+    - symbols
+    - error handling
 - we will add authentication
 - user admin (give them all the tasks)
-- learn validation
+- place the creating comments endpoints
 

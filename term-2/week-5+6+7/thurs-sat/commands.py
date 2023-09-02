@@ -2,7 +2,7 @@ from flask import Blueprint
 from datetime import datetime
 import time
 
-from main import db
+from main import db, bcrypt
 from models import Task, User, Comment
 
 db_commands = Blueprint("db", __name__)
@@ -21,10 +21,12 @@ def drop_db():
 def seed_db():
     # create User objects
     user1 = User(
-        email = "akash1@jit.com.au"
+        email = "akash1@jit.com.au",
+        password = bcrypt.generate_password_hash("123456").decode("utf-8")
     )
     user2 = User(
-        email = "akash1@dillon.com.au"
+        email = "akash1@dillon.com.au",
+        password = bcrypt.generate_password_hash("123456").decode("utf-8")
     )
 
     # add all users object to db
@@ -41,6 +43,7 @@ def seed_db():
         description = "Explaining students about ORM",
         due_date = datetime.fromtimestamp(time_1_day_later),
         completed_at = None,
+        state = "In Progress",
         user_id = user1.id,
     )
 
@@ -49,6 +52,7 @@ def seed_db():
         description = "Explaining students about Blueprint",
         due_date = datetime.fromtimestamp(time_1_day_later),
         completed_at = datetime.now(),
+        state = "Completed",
         user_id = user2.id,
     )
 
@@ -60,6 +64,7 @@ def seed_db():
         due_date = datetime.fromtimestamp(time_1_day_ago),
         completed_at = datetime.fromtimestamp(time_2_day_ago),
         user_id = user1.id,
+        state = "Completed",
     )
 
     # add tasks object to db

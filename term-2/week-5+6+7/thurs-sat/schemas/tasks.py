@@ -1,11 +1,14 @@
 from main import ma
-from marshmallow import fields
+from marshmallow import fields, validate
 
 class TaskSchema(ma.Schema):
+    state = fields.String(load_default='Not Started', validate=validate.OneOf(["Not Started", "In Progress", "Completed"]))
+
     class Meta:
         fields = (
             "id",
             "name",
+            "state",
             "description",
             "due_date",
             "completed_at",
