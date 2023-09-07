@@ -11,12 +11,15 @@ db = SQLAlchemy()
 ma = Marshmallow()
 
 def init_app():
+    # load environment variable
+    from dotenv import load_dotenv
+    load_dotenv()
+
     # create flask app instance
     app = Flask(__name__)
 
     # app config
     app.config.from_object("config.app_config")
-    app.config["JWT_SECRET_KEY"] = os.environ.get("DATABASE_URI") or "super-secret"
     jwt = JWTManager(app)
 
     # connect to DB

@@ -10,6 +10,12 @@ class BaseConfig(object):
         
         return db
 
+    @property
+    def JWT_SECRET_KEY(self):
+        secret_key = os.environ.get("JWT_SECRET")
+        
+        return secret_key or "super-secret"
+
 
 class DevelopementConfig(BaseConfig):
     DEBUG=True
